@@ -5,8 +5,6 @@ app = FastAPI()
 
 r = redis.Redis(host="host.docker.internal", port=6379)
 
-#r = redis.from_url("redis://host.docker.internal:6379")
-
 
 @app.get("/")
 async def hello():
